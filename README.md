@@ -2,7 +2,18 @@
 
 A programmatic SEO site: open source alternatives to the tools people already pay for.
 
-**Status:** vertical slice. 4 products, 15 projects, 24 pages. Not deployed.
+**Live:** https://mhaq6349-rgb.github.io/oss-alternatives/
+**Status:** deployed. 49 products, 101 projects, 171 pages.
+
+## Numbers
+
+| | |
+|---|---|
+| Products | 49 |
+| Open source projects | 101 |
+| Categories | 20 |
+| Pages | 171 |
+| Combined GitHub stars | 3,348,886 |
 
 ## Why this niche
 
@@ -44,22 +55,33 @@ Each tool page carries editorial notes, a star-sorted card grid, and a compariso
 
 Generated alongside the HTML: `sitemap.xml` and `robots.txt`.
 
+## Deploy
+
+GitHub Pages serves `docs/` from `main`. Build, then commit `docs/` and push.
+
+```bash
+python scripts/fetch_github.py
+python scripts/build.py
+git add -A && git commit -m "rebuild" && git push
+```
+
 ## What was verified
 
-- 24 pages build from 15 live GitHub records, 713,925 combined stars.
-- Every page loads with zero console errors.
+- 171 pages build from 101 live GitHub records, 3,348,886 combined stars.
+- Every page loads with zero console errors, locally and live.
 - Stylesheet resolves correctly at all three depths (`/`, `/alternatives/x/`, `/projects/o/r/`).
+- `/`, a tool page, a project page, a category page, `sitemap.xml`, `robots.txt` and the stylesheet all return 200 from the deployed host.
 
-Two bugs were found and fixed during the slice:
+Bugs found and fixed during the build:
 
-1. **Link depth was off by one.** Subpages requested `/alternatives/assets/style.css` and rendered unstyled. Caught by reading the access log, not by eye.
-2. **`NOASSERTION` leaked into the UI.** AFFiNE has no SPDX license, so the card printed the API's placeholder. Now renders as "see repo".
+1. **Link depth was off by one.** Subpages requested `/alternatives/assets/style.css` and rendered completely unstyled. Caught by reading the access log, not by eye.
+2. **`NOASSERTION` leaked into the UI.** AFFiNE, NocoDB, Baserow and Teable use modified licences that GitHub cannot identify. Now rendered as "custom licence" with an explanation, rather than looking like a data failure.
 
 ## Next
 
-1. **Scale the dataset.** 4 tools → ~45. At 4–6 alternatives each that is roughly 200 project pages plus 45 tool pages, ~255 total.
-2. **Deploy.** GitHub Pages, repository `oss-alternatives`, served from `/docs` or `gh-pages`.
-3. **Then measure.** Search Console, which queries actually land, which pages get impressions but no clicks.
+1. **Search Console.** Submit `sitemap.xml`, watch which queries actually land. Without this the site has no feedback loop.
+2. **Content depth.** The tool pages are thin: a paragraph, four cards, a table. The ones that rank will need a real comparison section.
+3. **More products.** 49 is a start. 150 is a site.
 
 ## Known gaps
 
