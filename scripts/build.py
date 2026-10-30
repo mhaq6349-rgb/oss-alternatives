@@ -36,8 +36,10 @@ def stars(n):
 def license_name(repo):
     lic = REPOS.get(repo, {}).get("license") or {}
     spdx = lic.get("spdx_id")
-    if not spdx or spdx == "NOASSERTION":
-        return "see repo"
+    if not spdx:
+        return "unknown"
+    if spdx == "NOASSERTION":
+        return "custom licence"
     return spdx
 
 
@@ -152,7 +154,7 @@ def build_tool(tool):
 <section class="cards">{cards}</section>
 <h2>At a glance</h2>
 {table([(a["repo"], a["why"]) for a in alts])}
-<p class="note">Star counts come from GitHub and move daily. A high count means attention, not fitness — read the notes above before picking.</p>"""
+<p class="note">Star counts come from GitHub and move daily. A high count means attention, not fitness — read the notes above before picking. Licences marked "custom licence" use modified terms GitHub cannot identify; check the repository before assuming standard AGPL or MIT rights.</p>"""
     return page(
         f"Open source alternatives to {tool['name']}",
         f"{len(alts)} open source alternatives to {tool['name']}, with stars, licenses and what each one is actually good at.",
