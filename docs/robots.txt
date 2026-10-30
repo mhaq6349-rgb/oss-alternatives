@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mhaq6349-rgb.github.io/oss-alternatives/sitemap.xml

@@ -1,4 +1,4 @@
-site/
 .playwright-mcp/
 __pycache__/
 *.pyc
+site/

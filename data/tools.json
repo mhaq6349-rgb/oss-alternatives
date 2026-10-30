@@ -2,59 +2,321 @@
   "site": {
     "name": "OpenAlt",
     "tagline": "The open source alternative to the tools you already pay for",
-    "base_url": "https://example.github.io/oss-alternatives"
+    "base_url": "https://mhaq6349-rgb.github.io/oss-alternatives"
   },
   "tools": [
-    {
-      "slug": "notion",
-      "name": "Notion",
-      "category": "Notes & docs",
-      "site": "https://notion.so",
-      "summary": "All-in-one workspace combining notes, documents, wikis and databases.",
+    { "slug": "notion", "name": "Notion", "category": "Notes & docs", "site": "https://notion.so", "summary": "All-in-one workspace combining notes, documents, wikis and databases.",
       "alternatives": [
-        { "repo": "AppFlowy-IO/AppFlowy", "why": "The closest 1:1 replacement. Docs, databases and kanban boards in one offline-first app." },
-        { "repo": "toeverything/AFFiNE", "why": "Docs and whiteboard on the same canvas. Stronger than Notion for visual thinking." },
-        { "repo": "logseq/logseq", "why": "Outliner and personal knowledge base built on local Markdown files you own." },
-        { "repo": "siyuan-note/siyuan", "why": "Block-based note taking with a built-in database and no subscription." }
-      ]
-    },
-    {
-      "slug": "linear",
-      "name": "Linear",
-      "category": "Project management",
-      "site": "https://linear.app",
-      "summary": "Fast issue tracking built around keyboard-driven workflows.",
+        { "repo": "AppFlowy-IO/AppFlowy", "why": "Closest 1:1 replacement: docs, databases and kanban in one offline-first app." },
+        { "repo": "toeverything/AFFiNE", "why": "Docs and whiteboard on the same canvas; better than Notion for visual thinking." },
+        { "repo": "logseq/logseq", "why": "Outliner built on local Markdown files you actually own." },
+        { "repo": "siyuan-note/siyuan", "why": "Block-based notes with a built-in database and no subscription." }
+      ] },
+    { "slug": "evernote", "name": "Evernote", "category": "Notes & docs", "site": "https://evernote.com", "summary": "Note capture with web clipping and notebook organisation.",
       "alternatives": [
-        { "repo": "makeplane/plane", "why": "Cycles, modules and issues with a UI close enough that the switch takes an afternoon." },
-        { "repo": "hcengineering/platform", "why": "Full suite: issues, docs, HR and CRM in one self-hosted platform." },
-        { "repo": "go-vikunja/vikunja", "why": "Lightweight task manager with lists, kanban and Gantt. Single binary." },
-        { "repo": "taigaio/taiga", "why": "Agile-first: epics, sprints and burndown charts. Older but battle-tested." }
-      ]
-    },
-    {
-      "slug": "slack",
-      "name": "Slack",
-      "category": "Team chat",
-      "site": "https://slack.com",
-      "summary": "Channel-based team messaging with integrations and huddles.",
+        { "repo": "laurent22/joplin", "why": "The standard Evernote replacement: end-to-end encryption, web clipper, sync you choose." },
+        { "repo": "logseq/logseq", "why": "If your notes are thinking rather than filing, an outliner beats a notebook." },
+        { "repo": "siyuan-note/siyuan", "why": "Local-first with strong block references and backlinks." },
+        { "repo": "zettlr/zettlr", "why": "Markdown editor with citation support; good for research writing." }
+      ] },
+    { "slug": "confluence", "name": "Confluence", "category": "Notes & docs", "site": "https://atlassian.com/software/confluence", "summary": "Team wiki and documentation space attached to Jira.",
       "alternatives": [
-        { "repo": "mattermost/mattermost", "why": "The most mature Slack replacement. Channels, threads, playbooks and a large integration ecosystem." },
-        { "repo": "RocketChat/Rocket.Chat", "why": "Slack-style UI with omnichannel support: web, email and social in one inbox." },
+        { "repo": "outline/outline", "why": "The cleanest wiki experience of the bunch; fast search, nice editor." },
+        { "repo": "docmost/docmost", "why": "Confluence-like spaces and permissions without Atlassian's weight." },
+        { "repo": "requarks/wiki", "why": "Mature, stable, integrates with almost any auth provider." },
+        { "repo": "BookStackApp/BookStack", "why": "Books, chapters and pages. Simple mental model that never confuses writers." }
+      ] },
+    { "slug": "google-docs", "name": "Google Docs", "category": "Office & docs", "site": "https://docs.google.com", "summary": "Browser word processor with real-time collaboration.",
+      "alternatives": [
+        { "repo": "ONLYOFFICE/DocumentServer", "why": "Full office suite, collaborative editing, self-hostable, strong docx fidelity." },
+        { "repo": "CollaboraOnline/online", "why": "LibreOffice in the browser. Best compatibility with existing .docx files." },
+        { "repo": "ether/etherpad-lite", "why": "Real-time collaborative text with zero ceremony. Great for drafting." },
+        { "repo": "cryptpad/cryptpad", "why": "End-to-end encrypted docs, sheets and slides." }
+      ] },
+    { "slug": "obsidian", "name": "Obsidian", "category": "Notes & docs", "site": "https://obsidian.md", "summary": "Local Markdown knowledge base with a graph and plugin ecosystem.",
+      "alternatives": [
+        { "repo": "logseq/logseq", "why": "Closest in spirit: local files, outliner, backlinks, plugins." },
+        { "repo": "siyuan-note/siyuan", "why": "Local-first with a database layer Obsidian lacks." },
+        { "repo": "AppFlowy-IO/AppFlowy", "why": "If you want databases alongside notes and a Notion-like UI." }
+      ] },
+    { "slug": "linear", "name": "Linear", "category": "Project management", "site": "https://linear.app", "summary": "Fast issue tracking built around keyboard-driven workflows.",
+      "alternatives": [
+        { "repo": "makeplane/plane", "why": "Cycles, modules and issues with a UI close enough that switching takes an afternoon." },
+        { "repo": "hcengineering/platform", "why": "Issues, docs, HR and CRM in one self-hosted platform." },
+        { "repo": "go-vikunja/vikunja", "why": "Lightweight task manager, single binary, lists and kanban and Gantt." },
+        { "repo": "taigaio/taiga", "why": "Agile-first with epics and sprints. Older but battle-tested." }
+      ] },
+    { "slug": "jira", "name": "Jira", "category": "Project management", "site": "https://atlassian.com/software/jira", "summary": "Issue and sprint tracking with deep customisation.",
+      "alternatives": [
+        { "repo": "opf/openproject", "why": "The most complete Jira replacement: work packages, Gantt, budgets, roadmaps." },
+        { "repo": "taigaio/taiga", "why": "Agile-native: backlog, sprints, burndown without plugin hunting." },
+        { "repo": "redmine/redmine", "why": "Twenty years of stability. Ugly, unkillable, plugin-rich." },
+        { "repo": "makeplane/plane", "why": "Modern alternative if your team never used Jira's advanced config anyway." }
+      ] },
+    { "slug": "trello", "name": "Trello", "category": "Project management", "site": "https://trello.com", "summary": "Kanban boards with cards, lists and simple automation.",
+      "alternatives": [
+        { "repo": "plankanban/planka", "why": "Closest Trello clone: boards, lists, cards, real-time updates." },
+        { "repo": "wekan/wekan", "why": "The original open source kanban. Swimplanes, checklists, integrations." },
+        { "repo": "go-vikunja/vikunja", "why": "Kanban plus Gantt and calendar views; more than a board." },
+        { "repo": "mattermost/focalboard", "why": "Boards that live next to your chat; good if you already run Mattermost." }
+      ] },
+    { "slug": "asana", "name": "Asana", "category": "Project management", "site": "https://asana.com", "summary": "Task and project tracking with timelines and dependencies.",
+      "alternatives": [
+        { "repo": "taigaio/taiga", "why": "Task boards and sprints with a similar feel." },
+        { "repo": "opf/openproject", "why": "Handles dependencies and timelines better than most paid tools." },
+        { "repo": "go-vikunja/vikunja", "why": "Much lighter, single binary, no per-seat cost." },
+        { "repo": "makeplane/plane", "why": "If your Asana use is really just issues and owners." }
+      ] },
+    { "slug": "monday", "name": "monday.com", "category": "Project management", "site": "https://monday.com", "summary": "Colourful work OS built on configurable boards.",
+      "alternatives": [
+        { "repo": "makeplane/plane", "why": "Cleaner board and issue model without the spreadsheet sprawl." },
+        { "repo": "opf/openproject", "why": "Configurable work packages cover most monday use cases." },
+        { "repo": "hcengineering/platform", "why": "Multiple apps (issues, CRM, docs) sharing one data model." },
+        { "repo": "taigaio/taiga", "why": "Simpler and faster if you never used monday's automations." }
+      ] },
+    { "slug": "clickup", "name": "ClickUp", "category": "Project management", "site": "https://clickup.com", "summary": "Everything app: tasks, docs, goals, time tracking.",
+      "alternatives": [
+        { "repo": "makeplane/plane", "why": "Does the 20% of ClickUp people actually use, and much faster." },
+        { "repo": "hcengineering/platform", "why": "Genuinely multi-app: issues, docs, CRM, HR in one." },
+        { "repo": "go-vikunja/vikunja", "why": "Tasks and lists without the feature maze." },
+        { "repo": "opf/openproject", "why": "When you need the heavy project-management half of ClickUp." }
+      ] },
+    { "slug": "airtable", "name": "Airtable", "category": "Databases", "site": "https://airtable.com", "summary": "Spreadsheet-database hybrid with views and automations.",
+      "alternatives": [
+        { "repo": "nocodb/nocodb", "why": "The most direct Airtable replacement: views, filters, forms, API on top of any SQL database." },
+        { "repo": "baserow/baserow", "why": "Polished UI, self-hostable, strong formula and view support." },
+        { "repo": "teableio/teable", "why": "Postgres-backed with a real spreadsheet feel at scale." },
+        { "repo": "seatable/seatable", "why": "Rows, views and plugins; good for teams replacing Airtable wholesale." }
+      ] },
+    { "slug": "slack", "name": "Slack", "category": "Team chat", "site": "https://slack.com", "summary": "Channel-based team messaging with integrations and huddles.",
+      "alternatives": [
+        { "repo": "mattermost/mattermost", "why": "Most mature Slack replacement: channels, threads, playbooks, big integration ecosystem." },
+        { "repo": "RocketChat/Rocket.Chat", "why": "Slack-style UI plus omnichannel: web, email and social in one inbox." },
         { "repo": "zulip/zulip", "why": "Threaded conversations that stay readable at scale. Best for async teams." },
-        { "repo": "element-hq/element-web", "why": "Matrix client. Federated, encrypted, and not owned by any single company." }
-      ]
-    },
-    {
-      "slug": "figma",
-      "name": "Figma",
-      "category": "Design",
-      "site": "https://figma.com",
-      "summary": "Browser-based interface design with real-time multiplayer editing.",
+        { "repo": "element-hq/element-web", "why": "Matrix client: federated, encrypted, not owned by one company." }
+      ] },
+    { "slug": "discord", "name": "Discord", "category": "Team chat", "site": "https://discord.com", "summary": "Voice, video and community chat built around servers.",
       "alternatives": [
-        { "repo": "penpot/penpot", "why": "The only true Figma competitor: design and code in the same file, self-hostable." },
-        { "repo": "excalidraw/excalidraw", "why": "Hand-drawn diagrams and wireframes. Much faster than Figma for early thinking." },
+        { "repo": "spacebarchat/server", "why": "Spacebar: a Discord-compatible server, so existing clients and bots work." },
+        { "repo": "revoltchat/revite", "why": "Revolt's client: Discord-shaped UX, self-hostable, modern stack." },
+        { "repo": "element-hq/element-web", "why": "Matrix gives you federation and encryption Discord will never add." },
+        { "repo": "RocketChat/Rocket.Chat", "why": "If you need channels plus real support tooling." }
+      ] },
+    { "slug": "figma", "name": "Figma", "category": "Design", "site": "https://figma.com", "summary": "Browser-based interface design with real-time multiplayer editing.",
+      "alternatives": [
+        { "repo": "penpot/penpot", "why": "The only true Figma competitor: design and code in one file, self-hostable." },
+        { "repo": "excalidraw/excalidraw", "why": "Hand-drawn diagrams and wireframes, far faster than Figma for early thinking." },
         { "repo": "tldraw/tldraw", "why": "Embeddable infinite canvas. A toolkit rather than a finished design app." }
-      ]
-    }
+      ] },
+    { "slug": "sketch", "name": "Sketch", "category": "Design", "site": "https://sketch.com", "summary": "Mac-native interface design with symbols and libraries.",
+      "alternatives": [
+        { "repo": "penpot/penpot", "why": "Cross-platform, browser-based, and free of the Mac requirement." },
+        { "repo": "tldraw/tldraw", "why": "Good for sketching flows and systems before committing to a design file." },
+        { "repo": "excalidraw/excalidraw", "why": "Wireframes that look intentionally rough, which is usually an advantage." }
+      ] },
+    { "slug": "photoshop", "name": "Photoshop", "category": "Design", "site": "https://adobe.com/products/photoshop", "summary": "Raster image editing and compositing.",
+      "alternatives": [
+        { "repo": "KDE/krita", "why": "The strongest open source painting and raster editor; excellent brush engine." },
+        { "repo": "GraphiteEditor/Graphite", "why": "Node-based vector and raster editing; a different, faster workflow for composites." },
+        { "repo": "inkscape/inkscape", "why": "For the vector half of what people use Photoshop for." }
+      ] },
+    { "slug": "illustrator", "name": "Illustrator", "category": "Design", "site": "https://adobe.com/products/illustrator", "summary": "Vector illustration and logo design.",
+      "alternatives": [
+        { "repo": "inkscape/inkscape", "why": "The long-standing vector editor; SVG-native and scriptable." },
+        { "repo": "GraphiteEditor/Graphite", "why": "Modern node-based vector tool with a much better UI than Inkscape." },
+        { "repo": "KDE/krita", "why": "Handles vector layers alongside raster for illustration work." }
+      ] },
+    { "slug": "canva", "name": "Canva", "category": "Design", "site": "https://canva.com", "summary": "Template-driven design for non-designers.",
+      "alternatives": [
+        { "repo": "penpot/penpot", "why": "Real design tooling without the per-seat model; templates are your own." },
+        { "repo": "GraphiteEditor/Graphite", "why": "Good for producing consistent graphics once, then reusing them." },
+        { "repo": "excalidraw/excalidraw", "why": "For the diagram-and-flow half of what people use Canva for." }
+      ] },
+    { "slug": "excel", "name": "Excel", "category": "Office & docs", "site": "https://microsoft.com/microsoft-365/excel", "summary": "Spreadsheet with formulas, pivot tables and macros.",
+      "alternatives": [
+        { "repo": "LibreOffice/core", "why": "The full suite, best formula coverage, and it opens .xlsx without drama." },
+        { "repo": "ONLYOFFICE/DocumentServer", "why": "Closest to Excel's modern UI; strong compatibility and collaboration." },
+        { "repo": "CollaboraOnline/online", "why": "Browser editing on top of LibreOffice's engine." }
+      ] },
+    { "slug": "word", "name": "Microsoft Word", "category": "Office & docs", "site": "https://microsoft.com/microsoft-365/word", "summary": "Desktop word processor and the .docx standard.",
+      "alternatives": [
+        { "repo": "LibreOffice/core", "why": "Opens and saves .docx reliably; the default answer for a reason." },
+        { "repo": "ONLYOFFICE/DocumentServer", "why": "Ribbon UI that Word users recognise immediately." },
+        { "repo": "CollaboraOnline/online", "why": "LibreOffice in the browser for teams that never install software." },
+        { "repo": "ether/etherpad-lite", "why": "When the document is really a shared draft, not a formatted deliverable." }
+      ] },
+    { "slug": "powerpoint", "name": "PowerPoint", "category": "Office & docs", "site": "https://microsoft.com/microsoft-365/powerpoint", "summary": "Slide decks with transitions and presenter tools.",
+      "alternatives": [
+        { "repo": "LibreOffice/core", "why": "Impress handles .pptx and is included in the same install as Writer and Calc." },
+        { "repo": "ONLYOFFICE/DocumentServer", "why": "Best-looking deck editor of the open source options." },
+        { "repo": "CollaboraOnline/online", "why": "Browser-based decks for teams that collaborate live." }
+      ] },
+    { "slug": "gmail", "name": "Gmail", "category": "Email", "site": "https://mail.google.com", "summary": "Webmail with search, labels and a large integration surface.",
+      "alternatives": [
+        { "repo": "roundcube/roundcubemail", "why": "Battle-tested webmail; runs on any IMAP server you control." },
+        { "repo": "foundry376/Mailspring", "why": "Desktop client that feels modern; good Gmail-shaped habits." },
+        { "repo": "mailcow/mailcow-dockerized", "why": "Not just a client: the mail server itself, in containers." }
+      ] },
+    { "slug": "outlook", "name": "Outlook", "category": "Email", "site": "https://outlook.com", "summary": "Mail, calendar and contacts in one desktop and web client.",
+      "alternatives": [
+        { "repo": "foundry376/Mailspring", "why": "Fast desktop mail with unified inboxes." },
+        { "repo": "roundcube/roundcubemail", "why": "Reliable webmail you host yourself." },
+        { "repo": "mailcow/mailcow-dockerized", "why": "Full mail stack with calendar and contacts via SOGo." }
+      ] },
+    { "slug": "1password", "name": "1Password", "category": "Security", "site": "https://1password.com", "summary": "Password manager with sharing, passkeys and audit logs.",
+      "alternatives": [
+        { "repo": "bitwarden/server", "why": "Feature-complete and self-hostable, with clients on every platform." },
+        { "repo": "dani-garcia/vaultwarden", "why": "Lightweight Bitwarden-compatible server. Runs on a Raspberry Pi." },
+        { "repo": "keepassxreboot/keepassxc", "why": "Fully offline, file-based vault. No server to breach." }
+      ] },
+    { "slug": "lastpass", "name": "LastPass", "category": "Security", "site": "https://lastpass.com", "summary": "Cloud password manager with browser extensions.",
+      "alternatives": [
+        { "repo": "dani-garcia/vaultwarden", "why": "Fastest migration path; works with existing Bitwarden apps." },
+        { "repo": "bitwarden/server", "why": "The full platform if you want organisations and audit trails." },
+        { "repo": "keepassxreboot/keepassxc", "why": "If you would rather not trust any vendor after a breach." }
+      ] },
+    { "slug": "dropbox", "name": "Dropbox", "category": "File sync", "site": "https://dropbox.com", "summary": "Cloud file sync and sharing across devices.",
+      "alternatives": [
+        { "repo": "nextcloud/server", "why": "Files, sharing, calendar, contacts and office integration in one platform." },
+        { "repo": "haiwen/seafile", "why": "Focused on reliable sync and file locking; faster than Nextcloud on large libraries." },
+        { "repo": "syncthing/syncthing", "why": "Peer-to-peer, no server, no account. Devices sync directly." }
+      ] },
+    { "slug": "google-drive", "name": "Google Drive", "category": "File sync", "site": "https://drive.google.com", "summary": "Cloud storage tied to Google's office suite.",
+      "alternatives": [
+        { "repo": "nextcloud/server", "why": "The closest full replacement, including the office suite via Collabora." },
+        { "repo": "haiwen/seafile", "why": "Better raw file sync performance and versioning." },
+        { "repo": "syncthing/syncthing", "why": "For people who want the files but not the cloud." }
+      ] },
+    { "slug": "google-analytics", "name": "Google Analytics", "category": "Analytics", "site": "https://analytics.google.com", "summary": "Web analytics with event tracking and attribution.",
+      "alternatives": [
+        { "repo": "plausible/analytics", "why": "Privacy-first, cookie-free, one script tag. Answers the questions GA buries." },
+        { "repo": "umami-software/umami", "why": "Lightweight self-hosted analytics with a clean dashboard." },
+        { "repo": "matomo-org/matomo", "why": "Full GA-style depth, on your own server, with heatmaps and funnels." },
+        { "repo": "PostHog/posthog", "why": "Product analytics plus session replay and feature flags." }
+      ] },
+    { "slug": "mixpanel", "name": "Mixpanel", "category": "Analytics", "site": "https://mixpanel.com", "summary": "Product analytics focused on funnels and retention.",
+      "alternatives": [
+        { "repo": "PostHog/posthog", "why": "The closest full replacement: events, funnels, cohorts, replay, flags." },
+        { "repo": "plausible/analytics", "why": "If you only need traffic and referrers, this is far cheaper to run." },
+        { "repo": "umami-software/umami", "why": "Simple event tracking without the product-analytics overhead." }
+      ] },
+    { "slug": "hotjar", "name": "Hotjar", "category": "Analytics", "site": "https://hotjar.com", "summary": "Session recordings, heatmaps and on-site surveys.",
+      "alternatives": [
+        { "repo": "openreplay/openreplay", "why": "Self-hosted session replay with DOM inspection and network logs." },
+        { "repo": "PostHog/posthog", "why": "Replay tied to the same events as your funnels, so you can act on it." },
+        { "repo": "rrweb-io/rrweb", "why": "The recording engine itself, if you want to build your own tooling." }
+      ] },
+    { "slug": "segment", "name": "Segment", "category": "Analytics", "site": "https://segment.com", "summary": "Customer data pipeline routing events to many destinations.",
+      "alternatives": [
+        { "repo": "jitsucom/jitsu", "why": "Self-hosted event pipeline that speaks the Segment API, so existing SDKs work." },
+        { "repo": "rudderlabs/rudder-server", "why": "Closest architectural match: warehouse-first CDP with the same event model." },
+        { "repo": "PostHog/posthog", "why": "If you would rather keep events and analysis in one system." }
+      ] },
+    { "slug": "zoom", "name": "Zoom", "category": "Video", "site": "https://zoom.us", "summary": "Video meetings with recording and breakout rooms.",
+      "alternatives": [
+        { "repo": "jitsi/jitsi-meet", "why": "The default self-hosted answer: no account needed for guests, scales well." },
+        { "repo": "bigbluebutton/bigbluebutton", "why": "Built for teaching: whiteboard, breakout rooms, recording." },
+        { "repo": "livekit/livekit", "why": "WebRTC infrastructure if you want to build video into your own product." }
+      ] },
+    { "slug": "loom", "name": "Loom", "category": "Video", "site": "https://loom.com", "summary": "Quick screen recordings with shareable links.",
+      "alternatives": [
+        { "repo": "CapSoftware/Cap", "why": "The closest Loom replacement: fast screen capture with shareable links." },
+        { "repo": "obsproject/obs-studio", "why": "Heavier, but records anything and streams it too." }
+      ] },
+    { "slug": "postman", "name": "Postman", "category": "Developer tools", "site": "https://postman.com", "summary": "API client with collections, environments and mocking.",
+      "alternatives": [
+        { "repo": "usebruno/bruno", "why": "Collections stored as plain files in your repo. No cloud, no login." },
+        { "repo": "hoppscotch/hoppscotch", "why": "Browser-based, fast, works without an account." },
+        { "repo": "Kong/insomnia", "why": "Mature client with strong GraphQL and gRPC support." }
+      ] },
+    { "slug": "github-copilot", "name": "GitHub Copilot", "category": "Developer tools", "site": "https://github.com/features/copilot", "summary": "AI code completion and chat inside the editor.",
+      "alternatives": [
+        { "repo": "continuedev/continue", "why": "Bring your own model; works across VS Code and JetBrains." },
+        { "repo": "TabbyML/tabby", "why": "Self-hosted completion server. Your code never leaves your infrastructure." },
+        { "repo": "cline/cline", "why": "Agentic coding in the editor with explicit approval for every action." },
+        { "repo": "Aider-AI/aider", "why": "Terminal-first pair programmer that commits its own changes." }
+      ] },
+    { "slug": "vercel", "name": "Vercel", "category": "Deployment", "site": "https://vercel.com", "summary": "Frontend hosting with preview deployments and edge functions.",
+      "alternatives": [
+        { "repo": "coollabsio/coolify", "why": "Deploy anything from Git with previews, on your own server." },
+        { "repo": "dokku/dokku", "why": "The original single-server Heroku replacement. Boring and reliable." },
+        { "repo": "caprover/caprover", "why": "Web UI over Docker with one-click apps." }
+      ] },
+    { "slug": "heroku", "name": "Heroku", "category": "Deployment", "site": "https://heroku.com", "summary": "Platform-as-a-service with git push deploys.",
+      "alternatives": [
+        { "repo": "dokku/dokku", "why": "Closest match: git push to deploy, buildpacks, single server." },
+        { "repo": "coollabsio/coolify", "why": "More modern UI and broader support than Dokku." },
+        { "repo": "caprover/caprover", "why": "Easiest to hand to a non-DevOps teammate." }
+      ] },
+    { "slug": "sentry", "name": "Sentry", "category": "Monitoring", "site": "https://sentry.io", "summary": "Error tracking with stack traces and release health.",
+      "alternatives": [
+        { "repo": "getsentry/sentry", "why": "The product itself is open source. Self-host and keep the same SDKs." },
+        { "repo": "highlight/highlight", "why": "Errors plus session replay in one self-hosted tool." },
+        { "repo": "openreplay/openreplay", "why": "Strong on the replay side; useful when errors are hard to reproduce." }
+      ] },
+    { "slug": "datadog", "name": "Datadog", "category": "Monitoring", "site": "https://datadoghq.com", "summary": "Infrastructure monitoring, APM, logs and dashboards.",
+      "alternatives": [
+        { "repo": "netdata/netdata", "why": "Real-time infrastructure metrics with almost no setup." },
+        { "repo": "grafana/grafana", "why": "Dashboards over any data source; the visual layer most teams want." },
+        { "repo": "prometheus/prometheus", "why": "Metrics collection and alerting that everything else integrates with." },
+        { "repo": "SigNoz/signoz", "why": "Closest single-binary Datadog replacement: traces, metrics and logs." }
+      ] },
+    { "slug": "zapier", "name": "Zapier", "category": "Automation", "site": "https://zapier.com", "summary": "Connect apps with trigger-action automations.",
+      "alternatives": [
+        { "repo": "n8n-io/n8n", "why": "Visual automations with real code steps when the GUI runs out." },
+        { "repo": "activepieces/activepieces", "why": "Simpler than n8n, MIT licensed, easy to extend with pieces." },
+        { "repo": "windmill-labs/windmill", "why": "Scripts as workflows; better when automation is really engineering." },
+        { "repo": "huginn/huginn", "why": "Agent-based automation that has aged surprisingly well." }
+      ] },
+    { "slug": "retool", "name": "Retool", "category": "Automation", "site": "https://retool.com", "summary": "Build internal tools by dragging components onto a canvas.",
+      "alternatives": [
+        { "repo": "appsmithorg/appsmith", "why": "The most direct Retool competitor: drag-and-drop UI over your data." },
+        { "repo": "ToolJet/ToolJet", "why": "Clean alternative with a strong component library." },
+        { "repo": "Budibase/budibase", "why": "Faster for simple CRUD apps; good for non-developers." }
+      ] },
+    { "slug": "calendly", "name": "Calendly", "category": "Scheduling", "site": "https://calendly.com", "summary": "Booking pages that respect calendar availability.",
+      "alternatives": [
+        { "repo": "calcom/cal.com", "why": "The full Calendly replacement: team routing, payments, workflows." },
+        { "repo": "lukevella/rallly", "why": "Group scheduling without accounts for participants." },
+        { "repo": "alextselegidis/easyappointments", "why": "Appointment booking for a business with staff and services." }
+      ] },
+    { "slug": "intercom", "name": "Intercom", "category": "Support", "site": "https://intercom.com", "summary": "Live chat, help centre and customer messaging.",
+      "alternatives": [
+        { "repo": "chatwoot/chatwoot", "why": "The strongest open source answer: shared inbox, live chat, help centre." },
+        { "repo": "zammad/zammad", "why": "Full helpdesk with SLAs and ticket routing." },
+        { "repo": "freescout-helpdesk/freescout", "why": "Lightweight shared mailbox. Replaces the email half of Intercom cheaply." }
+      ] },
+    { "slug": "hubspot", "name": "HubSpot", "category": "CRM", "site": "https://hubspot.com", "summary": "CRM with marketing, sales and service hubs.",
+      "alternatives": [
+        { "repo": "twentyhq/twenty", "why": "Modern CRM built the way HubSpot should have been; actively developed." },
+        { "repo": "espocrm/espocrm", "why": "Mature CRM with custom entities and workflow automation." },
+        { "repo": "salesagility/SuiteCRM", "why": "Deep sales pipeline features, widely used in larger teams." },
+        { "repo": "odoo/odoo", "why": "CRM plus accounting, inventory and HR in one suite." }
+      ] },
+    { "slug": "salesforce", "name": "Salesforce", "category": "CRM", "site": "https://salesforce.com", "summary": "Enterprise CRM with deep customisation and reporting.",
+      "alternatives": [
+        { "repo": "twentyhq/twenty", "why": "Modern data model with a much shorter time-to-first-record." },
+        { "repo": "espocrm/espocrm", "why": "Custom entities and relationships cover a lot of Salesforce config." },
+        { "repo": "salesagility/SuiteCRM", "why": "Established, extensible and built for sales teams rather than admins." },
+        { "repo": "odoo/odoo", "why": "When CRM is one module of a larger business system." }
+      ] },
+    { "slug": "mailchimp", "name": "Mailchimp", "category": "Marketing", "site": "https://mailchimp.com", "summary": "Email marketing with automation and audience segmentation.",
+      "alternatives": [
+        { "repo": "knadh/listmonk", "why": "Single binary newsletter and mailing list manager. Extremely fast." },
+        { "repo": "mautic/mautic", "why": "Full marketing automation: campaigns, segments, lead scoring." }
+      ] },
+    { "slug": "shopify", "name": "Shopify", "category": "E-commerce", "site": "https://shopify.com", "summary": "Hosted storefront with payments and inventory.",
+      "alternatives": [
+        { "repo": "medusajs/medusa", "why": "Headless commerce with a real developer API and no platform lock-in." },
+        { "repo": "saleor/saleor", "why": "GraphQL-first commerce with a strong multi-channel model." },
+        { "repo": "woocommerce/woocommerce", "why": "Runs on WordPress, which most small stores already know how to manage." },
+        { "repo": "vendure-ecommerce/vendure", "why": "TypeScript-native commerce framework for teams already in Node." }
+      ] },
+    { "slug": "notion-calendar", "name": "Google Calendar", "category": "Scheduling", "site": "https://calendar.google.com", "summary": "Shared calendars with scheduling and invites.",
+      "alternatives": [
+        { "repo": "calcom/cal.com", "why": "Handles the booking half; pairs with any CalDAV calendar." },
+        { "repo": "nextcloud/server", "why": "Includes a CalDAV calendar server alongside files." },
+        { "repo": "lukevella/rallly", "why": "When the problem is finding a time, not managing events." }
+      ] }
   ]
 }

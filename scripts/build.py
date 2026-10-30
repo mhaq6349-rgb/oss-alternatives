@@ -11,7 +11,7 @@ import shutil
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
-OUT = ROOT / "site"
+OUT = ROOT / "docs"
 
 SPEC = json.loads((DATA / "tools.json").read_text(encoding="utf-8"))
 REPOS = json.loads((DATA / "repos.json").read_text(encoding="utf-8"))
