@@ -1,0 +1,60 @@
+{
+  "site": {
+    "name": "OpenAlt",
+    "tagline": "The open source alternative to the tools you already pay for",
+    "base_url": "https://example.github.io/oss-alternatives"
+  },
+  "tools": [
+    {
+      "slug": "notion",
+      "name": "Notion",
+      "category": "Notes & docs",
+      "site": "https://notion.so",
+      "summary": "All-in-one workspace combining notes, documents, wikis and databases.",
+      "alternatives": [
+        { "repo": "AppFlowy-IO/AppFlowy", "why": "The closest 1:1 replacement. Docs, databases and kanban boards in one offline-first app." },
+        { "repo": "toeverything/AFFiNE", "why": "Docs and whiteboard on the same canvas. Stronger than Notion for visual thinking." },
+        { "repo": "logseq/logseq", "why": "Outliner and personal knowledge base built on local Markdown files you own." },
+        { "repo": "siyuan-note/siyuan", "why": "Block-based note taking with a built-in database and no subscription." }
+      ]
+    },
+    {
+      "slug": "linear",
+      "name": "Linear",
+      "category": "Project management",
+      "site": "https://linear.app",
+      "summary": "Fast issue tracking built around keyboard-driven workflows.",
+      "alternatives": [
+        { "repo": "makeplane/plane", "why": "Cycles, modules and issues with a UI close enough that the switch takes an afternoon." },
+        { "repo": "hcengineering/platform", "why": "Full suite: issues, docs, HR and CRM in one self-hosted platform." },
+        { "repo": "go-vikunja/vikunja", "why": "Lightweight task manager with lists, kanban and Gantt. Single binary." },
+        { "repo": "taigaio/taiga", "why": "Agile-first: epics, sprints and burndown charts. Older but battle-tested." }
+      ]
+    },
+    {
+      "slug": "slack",
+      "name": "Slack",
+      "category": "Team chat",
+      "site": "https://slack.com",
+      "summary": "Channel-based team messaging with integrations and huddles.",
+      "alternatives": [
+        { "repo": "mattermost/mattermost", "why": "The most mature Slack replacement. Channels, threads, playbooks and a large integration ecosystem." },
+        { "repo": "RocketChat/Rocket.Chat", "why": "Slack-style UI with omnichannel support: web, email and social in one inbox." },
+        { "repo": "zulip/zulip", "why": "Threaded conversations that stay readable at scale. Best for async teams." },
+        { "repo": "element-hq/element-web", "why": "Matrix client. Federated, encrypted, and not owned by any single company." }
+      ]
+    },
+    {
+      "slug": "figma",
+      "name": "Figma",
+      "category": "Design",
+      "site": "https://figma.com",
+      "summary": "Browser-based interface design with real-time multiplayer editing.",
+      "alternatives": [
+        { "repo": "penpot/penpot", "why": "The only true Figma competitor: design and code in the same file, self-hostable." },
+        { "repo": "excalidraw/excalidraw", "why": "Hand-drawn diagrams and wireframes. Much faster than Figma for early thinking." },
+        { "repo": "tldraw/tldraw", "why": "Embeddable infinite canvas. A toolkit rather than a finished design app." }
+      ]
+    }
+  ]
+}
