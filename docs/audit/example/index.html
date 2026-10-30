@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Worked example — seven lines, fully costed</title>
+<meta name="description" content="A complete sample audit for a 30-person company: what to replace, what to keep, and why.">
+<link rel="canonical" href="https://mhaq6349-rgb.github.io/oss-alternatives/audit/example/">
+<meta property="og:title" content="Worked example — seven lines, fully costed">
+<meta property="og:description" content="A complete sample audit for a 30-person company: what to replace, what to keep, and why.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23101a15'/%3E%3Ctext x='16' y='23' font-family='monospace' font-size='20' font-weight='700' fill='%23e9eee3' text-anchor='middle'%3E%24%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+<script>document.documentElement.classList.add("js");</script>
+<a class="skip" href="#main">Skip to content</a>
+<div class="grain" aria-hidden="true"></div>
+
+<div class="shell">
+
+  <header class="top">
+    <a class="mark" href="../index.html">OpenAlt <span>Audits</span></a>
+    <nav class="nav" aria-label="Primary">
+      <a href="../index.html">Home</a>
+      <a href="../method/index.html">Method</a>
+      <a href="../example/index.html" aria-current="page">Example</a>
+      <a href="../pricing/index.html">Pricing</a>
+      <a href="../faq/index.html">Questions</a>
+      <a href="../about/index.html">About</a>
+      <a href="../contact/index.html">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <aside class="rail" aria-label="Running total of savings found">
+      <p>Recoverable across these seven lines</p>
+      <span class="total" id="railTotal">$0</span>
+      <p class="note">This is the same arithmetic as the home page, expanded. Scroll and the total builds line by line.</p>
+    </aside>
+
+    <section class="hero" style="margin-top:0">
+      <h1 class="small">One stack, all seven lines, and the reasoning.</h1>
+      <p class="lede">A 30-person software company. Not a client — a constructed example using current list prices, so you can check our arithmetic before paying us anything.</p>
+      <p class="meta">$20,984 today, $10,706 after four replacements, $10,278 a year.</p>
+    </section>
+
+    <section class="ledger">
+      <table class="lines">
+        <caption>The full seven lines. Every replacement is priced with the server and maintenance it needs.</caption>
+        <thead>
+          <tr>
+            <th scope="col">Subscription</th>
+            <th scope="col">Replace with</th>
+            <th scope="col">Annual cost</th>
+            <th scope="col" class="num">Saves</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="replace" data-save="3240"><td class="vendor">Figma Professional</td><td class="alt">Penpot, self-hosted</td><td class="alt">$4,320 → $1,080</td><td class="num">$3,240</td></tr><tr class="replace" data-save="2034"><td class="vendor">Jira Standard</td><td class="alt">Plane, self-hosted</td><td class="alt">$2,934 → $900</td><td class="num">$2,034</td></tr><tr class="replace" data-save="1404"><td class="vendor">Confluence Standard</td><td class="alt">Outline, self-hosted</td><td class="alt">$2,304 → $900</td><td class="num">$1,404</td></tr><tr class="keep" data-save="0"><td class="vendor">Slack Pro</td><td class="alt">Keep it</td><td class="alt">$3,150</td><td class="num">—</td></tr><tr class="replace" data-save="1200"><td class="vendor">Auth0</td><td class="alt">Keycloak, self-hosted</td><td class="alt">$1,800 → $600</td><td class="num">$1,200</td></tr><tr class="replace" data-save="2400"><td class="vendor">Mixpanel Growth</td><td class="alt">PostHog, self-hosted</td><td class="alt">$3,600 → $1,200</td><td class="num">$2,400</td></tr><tr class="keep" data-save="0"><td class="vendor">1Password Business</td><td class="alt">Keep it</td><td class="alt">$2,876</td><td class="num">—</td></tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>$20,984 today</td>
+            <td>$10,706 after</td>
+            <td>4 of 7 replaced</td>
+            <td class="num">$10,278</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <section>
+      <h2>Line by line</h2>
+      <p class="sub">The part a spreadsheet alone will not tell you.</p>
+      <dl class="deliver">
+        <div>
+          <dt>Figma Professional</dt>
+          <dd>Twenty-four editors at $15. Penpot covers design and prototype handoff, and the files stay on your server.</dd>
+        </div><div>
+          <dt>Jira Standard</dt>
+          <dd>Thirty users at $8.15. Plane&#x27;s cycles and modules map onto how the team already works.</dd>
+        </div><div>
+          <dt>Confluence Standard</dt>
+          <dd>Thirty users at $6.40. Outline is faster and the search actually finds things.</dd>
+        </div><div>
+          <dt>Slack Pro</dt>
+          <dd>Kept. Every replacement here costs more in lost habits than it saves, and the network effect is real.</dd>
+        </div><div>
+          <dt>Auth0</dt>
+          <dd>Five thousand monthly active users. Keycloak is dull software, which is what you want under login.</dd>
+        </div><div>
+          <dt>Mixpanel Growth</dt>
+          <dd>Event volume is the cost driver. PostHog self-hosted also brings replays, which were being paid for separately.</dd>
+        </div><div>
+          <dt>1Password Business</dt>
+          <dd>Kept. Security tooling is the last place to optimise on price, and the migration risk is not worth $2,876.</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section>
+      <h2>What we would do first</h2>
+      <div class="prose">
+        <p><strong>Confluence first.</strong> Lowest risk of the four: nobody's workflow depends on the wiki's specific software, and Outline imports the content. A week of an intern's time.</p>
+        <p><strong>Auth0 second.</strong> Keycloak is the least pleasant migration here, but it sits under everything, so leaving it until later means doing the work twice.</p>
+        <p><strong>Figma and Jira last.</strong> Both are habit-heavy. Designers and engineers will resist, and resistance is expensive. Run them in parallel with the team's own champions, not as an IT project.</p>
+        <p><strong>Mixpanel whenever the contract renews.</strong> It is the biggest single saving and the least urgent, because event volume only grows.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>The caveat on all of this</h2>
+      <div class="callout">
+        <p>This is a modelled example built from list prices, not a rescued client. It shows the method and the arithmetic. Your numbers will differ in both directions, and the audit exists to replace this with your actual invoices.</p>
+      </div>
+      <div class="prose">
+        <p>Two things move the totals most: seat count, and whether you already pay annually. A team of twelve with three tools has very little to recover, and we will say so before taking the fee.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Check the prices yourself</h2>
+      <div class="prose">
+        <p>Every figure above is public list pricing at the time of writing. If you think a number is wrong, check it — and tell us, because a wrong price in a public example is worse for us than for you.</p>
+        <p class="meta" style="margin-top:20px"><a href="../index.html">Browse the replacement projects</a> before you decide.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="foot-grid">
+      <div>
+        <h4>OpenAlt Audits</h4>
+        <p style="margin:0">A fixed-fee audit of software spend. Built on the same data as the <a href="../../index.html">open source alternatives directory</a>.</p>
+      </div>
+      <div>
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="../method/index.html">Method</a></li>
+          <li><a href="../example/index.html">Worked example</a></li>
+          <li><a href="../pricing/index.html">Pricing</a></li>
+          <li><a href="../faq/index.html">Questions</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Elsewhere</h4>
+        <ul>
+          <li><a href="../contact/index.html">Request an audit</a></li>
+          <li><a href="https://github.com/mhaq6349-rgb/oss-alternatives">Source on GitHub</a></li>
+          <li><a href="../../index.html">Alternatives directory</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <span>&copy; OpenAlt Audits</span>
+      <span>Figures are annual and in USD.</span>
+    </div>
+  </footer>
+
+</div>
+<script src="../assets/site.js" defer></script>
+</body>
+</html>
