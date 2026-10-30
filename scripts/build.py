@@ -76,6 +76,7 @@ def page(title, description, body, depth, canonical):
 <header class="bar">
   <a class="brand" href="{root}index.html">{esc(SITE['name'])}</a>
   <span class="tagline">{esc(SITE['tagline'])}</span>
+  <a class="nav" href="{root}audit/index.html">Audits</a>
 </header>
 <main>
 {body}
@@ -236,6 +237,11 @@ def main():
 
     for repo, names in replaces.items():
         write(f"projects/{repo}/index.html", build_project(repo, names))
+
+    # hand-written pages that live alongside generated ones
+    audit = ROOT / "audit"
+    if audit.exists():
+        shutil.copytree(audit, OUT / "audit", dirs_exist_ok=True)
 
     # assets
     shutil.copyfile(ROOT / "assets" / "style.css", write("assets/style.css", ""))
