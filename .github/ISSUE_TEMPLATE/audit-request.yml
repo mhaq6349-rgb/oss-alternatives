@@ -1,0 +1,40 @@
+name: Audit request
+description: Ask for a software spend audit
+title: "Audit request"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **This issue is public.** Do not include card numbers, invoices, or anything confidential.
+        The four answers below are enough to start.
+  - type: input
+    id: headcount
+    attributes:
+      label: Headcount
+      description: Total employees, and roughly how many have a paid seat per tool.
+    validations:
+      required: true
+  - type: input
+    id: spend
+    attributes:
+      label: Approximate annual software spend
+      description: A rounded number in USD is fine.
+    validations:
+      required: true
+  - type: textarea
+    id: wasteful
+    attributes:
+      label: What you suspect is wasteful
+      description: The tool everyone complains about, or the one nobody remembers buying.
+  - type: input
+    id: contracts
+    attributes:
+      label: Anything contractual
+      description: Annual prepay, renewal dates, procurement rules.
+  - type: checkboxes
+    id: ack
+    attributes:
+      label: Confirmation
+      options:
+        - label: I have not included card numbers, invoices, or confidential data.
+          required: true

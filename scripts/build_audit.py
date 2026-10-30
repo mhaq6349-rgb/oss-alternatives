@@ -14,6 +14,36 @@ SRC = ROOT / "audit"
 BASE = "https://mhaq6349-rgb.github.io/oss-alternatives/audit"
 SITE_NAME = "OpenAlt Audits"
 
+# Set this to a real inbox to switch every request button from GitHub issues to email.
+# e.g. "hello@yourdomain.com". Empty means the GitHub issue flow stays active.
+CONTACT_EMAIL = ""
+
+GITHUB_ISSUE_URL = (
+    "https://github.com/mhaq6349-rgb/oss-alternatives/issues/new"
+    "?template=audit-request.yml"
+    "&title=Audit%20request"
+)
+
+
+def contact_href():
+    if CONTACT_EMAIL:
+        return "mailto:" + CONTACT_EMAIL + "?subject=Software%20audit%20request"
+    return GITHUB_ISSUE_URL
+
+
+def contact_label():
+    return "Email the request" if CONTACT_EMAIL else "Open a request"
+
+
+def contact_note():
+    if CONTACT_EMAIL:
+        return ("Writes to a real inbox. Include the four lines below and nothing else; "
+                "we ask for the invoices after you have agreed to the fee.")
+    return ("This button opens a structured request on the public repository, which is an odd place "
+            "for a commercial conversation but works without a mail server. Do not post financial "
+            "details there. Set CONTACT_EMAIL in scripts/build_audit.py to switch every button on "
+            "this site to a private inbox.")
+
 NAV = [
     ("", "Home"),
     ("method", "Method"),
@@ -601,7 +631,7 @@ def about():
 
 
 def contact():
-    body = """
+    body = f"""
     <section class="hero" style="margin-top:0">
       <h1 class="small">Tell us three things and we will tell you if this is worth $900.</h1>
       <p class="lede">No form, no calendar widget. One message, one honest reply within a business day.</p>
@@ -612,9 +642,9 @@ def contact():
         <div>
           <p class="price">$900<small>Fixed. Half refunded if we cannot find three times the fee.</small></p>
         </div>
-        <a class="cta" href="https://github.com/mhaq6349-rgb/oss-alternatives/issues/new?title=Audit%20request&body=Headcount%3A%0AApproximate%20annual%20software%20spend%3A%0AWhat%20you%20suspect%20is%20wasteful%3A%0AAnything%20contractual%20we%20should%20know%3A">Open a request</a>
+        <a class="cta" href="{contact_href()}">{contact_label()}</a>
       </div>
-      <p class="fineprint">Requests open an issue on the public repository, which is an odd place for a commercial conversation but works without a mail server or a form backend. Do not put financial details in it — that is what the reply is for.</p>
+      <p class="fineprint">{contact_note()}</p>
     </section>
 
     <section>
